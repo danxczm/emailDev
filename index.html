@@ -2,279 +2,217 @@
 
 <!-- needs to be localized for accessibility -->
 <html lang="en">
-  <head>
-    <title>Document</title>
-    <meta http-equiv="Conten-Type" content="text/html; charset=utf-8" />
 
-    <!-- to make sure it is responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <title>Document</title>
+  <meta http-equiv="Conten-Type" content="text/html; charset=utf-8" />
 
-    <!-- make sure it works fine with Microsoft browsers -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <style type="text/css">
-      /* CLIENT-SPECIFIC STYLES */
-      body,
-      table,
-      td,
-      a {
-        -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-      }
+  <!-- to make sure it is responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-      table,
-      td {
-        mso-table-lspace: 0pt;
-        mso-table-rspace: 0pt;
-      }
+  <!-- make sure it works fine with Microsoft browsers -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+    body,
+    table,
+    td,
+    a {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
 
-      img {
-        -ms-interpolation-mode: bicubic;
-      }
+    table,
+    td {
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
 
-      /* RESET STYLES */
-      img {
-        border: 0;
-        height: auto;
-        display: block; /* added by me */
-        line-height: 100%;
-        outline: none;
-        text-decoration: none;
-      }
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
 
-      table {
-        border-collapse: collapse !important;
-      }
+    /* RESET STYLES */
+    img {
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+    }
 
-      body {
-        height: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
+    table {
+      border-collapse: collapse !important;
+    }
+
+    body {
+      height: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+    }
+
+    /* iOS BLUE LINKS */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    /* GMAIL BLUE LINKS */
+    u+#body a {
+      color: inherit;
+      text-decoration: none;
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+    }
+
+    /* SAMSUNG MAIL BLUE LINKS */
+    #MessageViewBody a {
+      color: inherit;
+      text-decoration: none;
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+    }
+
+    /* Universal styles for links and stuff */
+
+    /* Responsive styles */
+
+    @media screen and (max-width: 600px) {
+      .mobile {
         width: 100% !important;
       }
 
-      /* iOS BLUE LINKS */
-      a[x-apple-data-detectors] {
-        color: inherit !important;
-        text-decoration: none !important;
-        font-size: inherit !important;
-        font-family: inherit !important;
-        font-weight: inherit !important;
-        line-height: inherit !important;
+      .block {
+        display: block !important;
+        width: 100% !important;
       }
+    }
+  </style>
+</head>
 
-      /* GMAIL BLUE LINKS */
-      u + #body a {
-        color: inherit;
-        text-decoration: none;
-        font-size: inherit;
-        font-family: inherit;
-        font-weight: inherit;
-        line-height: inherit;
-      }
+<!-- reset some values inline in body to make sure email agents wont rewrite them -->
 
-      /* SAMSUNG MAIL BLUE LINKS */
-      #MessageViewBody a {
-        color: inherit;
-        text-decoration: none;
-        font-size: inherit;
-        font-family: inherit;
-        font-weight: inherit;
-        line-height: inherit;
-      }
+<body id="body" style="margin: 0 !important; padding: 0 !important">
+  <!-- this is going to be a body of an email -->
+  <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+    <tr>
+      <td>
+        <!-- and this is the container inside the "body" -->
+        <table class="mobile" border="0" cellpadding="0" cellspacing="0" role="presentation" width="600"
+          style="margin: 0 auto; font-family: sans-serif">
+          <!-- each of these bellow tr>td are going to be their own " components" -->
+          <!-- Two logo images -->
+          <tr>
+            <td>
+              <img src="images/Navigation-1.jpg" width="600" border="0" style="
+                    width: 100%;
+                    max-width: 100%;
+                    min-width: 100px;
+                    display: block;
+                  " alt="Happy Christmas" />
+              <!-- Main img -->
+              <img src="images/Image-3.jpg" width="600" border="0" style="
+                    width: 100%;
+                    max-width: 100%;
+                    min-width: 100px;
+                    display: block;
+                  " alt="Santa" />
+            </td>
+          </tr>
+          <!-- h2 title -->
+          <tr>
+            <td>
+              <h2 style="
+                    color: #000;
+                    text-align: center;
+                    font-size: 28px;
+                    font-weight: 600;
+                    line-height: 38px;
+                    letter-spacing: 0.56px;
+                  ">
+                ALSO TONIGHT
+              </h2>
+              <p style="
+                    color: #000;
+                    text-align: center;
+                    font-size: 28px;
+                    font-weight: 600;
+                    line-height: 38px;
+                    letter-spacing: 0.56px;
+                  ">
+                10pm - 12pm EST
+              </p>
+            </td>
+          </tr>
+          <!-- bag picture -->
+          <tr>
+            <td></td>
+          </tr>
+          <!-- h1 title-->
+          <tr>
+            <td></td>
+          </tr>
+          <!-- Footer list of links 4 columns-->
+          <tr>
+            <td>
+              <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                style="margin: 0 auto;padding: 20px; width: 100%; max-width: 520px; border: 2px solid red">
+                <tr>
+                  <td style="padding: 20px">
+                    <table class="block" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                      width="25%" style="text-align: center; font-size: 14px; font-weight: 600;">
+                      <tr>
+                        <td>
+                          <p><a href="#">MY ACCOUNT</a></p>
+                        </td>
+                      </tr>
+                    </table>
+                    <table class="block" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                      width="25%" style="text-align: center; font-size: 14px; font-weight: 600;">
+                      <tr>
+                        <td>
+                          <p><a href="#">YOUR SERVICE</a></p>
+                        </td>
+                      </tr>
+                    </table>
+                    <table class="block" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                      width="25%" style="text-align: center; font-size: 14px; font-weight: 600;">
+                      <tr>
+                        <td>
+                          <p><a href="#">CAREERS</a></p>
+                        </td>
+                      </tr>
+                    </table>
+                    <table class="block" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                      width="25%" style="text-align: center; font-size: 14px; font-weight: 600;">
+                      <tr>
+                        <td>
+                          <p><a href="#">PRIVACY POLICY</a></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-      /* Universal styles for links and stuff */
 
-      /* Responsive styles */
-    </style>
-  </head>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
 
-  <!-- reset some values inline in body to make sure email agents wont rewrite them -->
-  <body id="body" style="margin: 0 !important; padding: 0 !important">
-    <div
-      style="
-        color: black;
-        font-family: sans-serif;
-        width: 650px;
-        margin: 0 auto;
-      "
-    >
-      <!-- Header with an img -->
-      <img src="images/Navigation-1.jpg" width="100%" alt="Happy Christmas" />
-      <!-- Main img -->
-      <img src="images/Image-3.jpg" width="100%" alt="Santa" />
-
-      <div style="padding: 30px 0">
-        <h2
-          style="
-            color: #000;
-            text-align: center;
-            font-size: 28px;
-            font-weight: 600;
-            line-height: 38px;
-            letter-spacing: 0.56px;
-          "
-        >
-          ALSO TONIGHT
-        </h2>
-        <h2
-          style="
-            color: #000;
-            text-align: center;
-            font-size: 28px;
-            font-weight: 600;
-            line-height: 38px;
-            letter-spacing: 0.56px;
-          "
-        >
-          10pm - 12pm EST
-        </h2>
-      </div>
-
-      <img
-        style="margin: 30px 0"
-        src="images/Image-18.jpg"
-        width="100%"
-        alt="White bag"
-      />
-
-      <div style="padding: 30px 0">
-        <h1
-          style="
-            margin: 0;
-            text-align: center;
-            font-size: 64px;
-            font-weight: 600;
-            line-height: 74px;
-            letter-spacing: 0.32px;
-          "
-        >
-          FREE BAG
-        </h1>
-        <h2
-          style="
-            text-align: center;
-            font-size: 28px;
-            font-weight: 600;
-            line-height: 38px;
-            letter-spacing: 0.14px;
-          "
-        >
-          WITH A $30 PURCHASE
-        </h2>
-
-        <p
-          style="
-            margin: 0 0 40px 0;
-            text-align: center;
-            font-size: 22px;
-            font-weight: 400;
-            line-height: 32px; /* 145.455% */
-            letter-spacing: 0.11px;
-          "
-        >
-          Codes : <strong>FREEBAG</strong>
-        </p>
-        <div style="text-align: center">
-          <!--[if mso]>
-            <v:roundrect
-              xmlns:v="urn:schemas-microsoft-com:vml"
-              xmlns:w="urn:schemas-microsoft-com:office:word"
-              href="http://"
-              style="height: 58px; v-text-anchor: middle; width: 212px"
-              arcsize="7%"
-              stroke="f"
-              fill="t"
-            >
-              <v:fill
-                type="tile"
-                src="https://media.istockphoto.com/id/1341387055/vector/christmas-snowflake-background.jpg?s=612x612&w=0&k=20&c=SRs0loHKG_etIwZprDt92TFrAw-YBDCwyKJDt7S0QyQ="
-                color="#556270"
-              />
-              <w:anchorlock />
-              <center
-                style="
-                  color: #ffffff;
-                  font-family: sans-serif;
-                  font-size: 13px;
-                  font-weight: bold;
-                "
-              >
-                BOOK NOW!
-              </center>
-            </v:roundrect>
-          <![endif]-->
-          <a
-            href="http://"
-            style="
-              background-color: #556270;
-              background-image: url(https://media.istockphoto.com/id/1341387055/vector/christmas-snowflake-background.jpg?s=612x612&w=0&k=20&c=SRs0loHKG_etIwZprDt92TFrAw-YBDCwyKJDt7S0QyQ=);
-              border-radius: 4px;
-              color: #ffffff;
-              display: inline-block;
-              font-family: sans-serif;
-              font-size: 16px;
-              font-weight: bold;
-              line-height: 58px;
-              text-align: center;
-              text-decoration: none;
-              width: 212px;
-              -webkit-text-size-adjust: none;
-              mso-hide: all;
-            "
-            >BOOK NOW!</a
-          >
-        </div>
-      </div>
-      <div style="background: #f9f9f9">
-        <!-- list of social media links -->
-        <hr />
-        <h2
-          style="
-            color: #939393;
-            text-align: center;
-
-            font-size: 28px;
-
-            font-weight: 600;
-            line-height: 38px;
-            letter-spacing: 0.14px;
-          "
-        >
-          Invite a Friend, Get $10
-        </h2>
-        <hr />
-        <!-- links to account-->
-        <p
-          style="
-            width: 456px;
-            margin: 0 auto;
-
-            color: #616161;
-            text-align: center;
-            font-size: 12px;
-            line-height: 22px;
-            letter-spacing: 0.06px;
-          "
-        >
-          ©2023 Christmas, Inc. The brand names, slogans, logos, other
-          trademarks of FridaySale's goods, promotions belong exclusively to
-          FridaySale Inc.
-        </p>
-
-        <p
-          style="
-            text-align: center;
-
-            font-size: 12px;
-            line-height: 22px;
-            letter-spacing: 0.06px;
-          "
-        >
-          <a href="#" style="color: #616161; font-weight: bold">Unsubscribe</a>
-        </p>
-      </div>
-    </div>
-  </body>
 </html>
 
 <!-- Use these for most things:
@@ -292,3 +230,23 @@ margin, padding, width, max-width -->
 <!-- for images, use: jpg, png, gif.
 	make theme responsive by default and always use alt
 -->
+
+<!-- for accessibility try to look for NOCoffee vision simulator -->
+
+<!-- When you code emails think in modules and components it will help you to reuse some of the peaces in later email campaigns-->
+
+<!-- Place most styles on table cells -->
+
+<!-- Boilerplate Tables -->
+
+<!-- <table
+  border="0"
+  cellpadding="0"
+  cellspacing="0"
+  role="presentation"
+  width="100%"
+>
+  <tr>
+    <td style="styles go here"></td>
+  </tr>
+</table> -->
